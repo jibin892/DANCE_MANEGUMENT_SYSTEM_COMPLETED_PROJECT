@@ -6,16 +6,16 @@ public class Cheque {
     private String status;
     private String user;
     private String prize;
+    private String des;
 
 
-
-    public Cheque(String image,String status,String user,String prize) {
+    public Cheque(String image,String status,String user,String prize,String des) {
 
         this.image = image;
         this.status = status;
         this.user=user;
         this.prize=prize;
-
+        this.des=des;
     }
 
     public Cheque() {
@@ -31,4 +31,8 @@ public class Cheque {
     public String getUser() {
         return user;
     }
-    public String getPrize() { return  prize; }}
+    public String getPrize() { return  prize; }
+    public String getDes()
+    {
+        return des;
+    }}

@@ -74,11 +74,13 @@ yapp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                Intent intentWhatsapp = new Intent(Intent.ACTION_VIEW);
-                String url = "9847423836";
-                intentWhatsapp.setData(Uri.parse(url));
-                intentWhatsapp.setPackage("com.gbwhatsapp");
-                startActivity(intentWhatsapp);
+                Uri uri = Uri.parse("smsto:" +"9496057270");
+
+                Intent i = new Intent(Intent.ACTION_SENDTO, uri);
+                i.putExtra("sms_body","");
+                i.setPackage("com.whatsapp");
+                i.getPackage();
+                startActivity(i);
 }
 
         });

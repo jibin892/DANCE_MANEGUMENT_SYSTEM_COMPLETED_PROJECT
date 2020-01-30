@@ -111,7 +111,9 @@ swipe.setRefreshing(false);
                                         product.getString("event_name"),
                                         product.getString("event_date"),
                                         product.getString("eventplace"),
-                                        product.getString("event_time")
+                                        product.getString("event_time"),
+                                        product.getString("event_discription")
+
 
 
                                 ));
@@ -208,14 +210,14 @@ swipe.setRefreshing(false);
         }
 
 
-        if (id==R.id.event){
-
-
-            Intent iiiii=new Intent(getActivity(), Eventok.class);
-            startActivity(iiiii);
-
-
-        }
+//        if (id==R.id.event){
+//
+//
+//            Intent iiiii=new Intent(getActivity(), Eventok.class);
+//            startActivity(iiiii);
+//
+//
+//        }
 
 
         return super.onOptionsItemSelected(item);

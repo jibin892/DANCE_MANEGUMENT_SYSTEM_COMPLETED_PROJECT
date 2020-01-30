@@ -207,14 +207,14 @@ swipe.setRefreshing(false);
         }
 
 
-        if (id==R.id.event){
-
-
-            Intent iiiii=new Intent(getActivity(), Eventok.class);
-            startActivity(iiiii);
-
-
-        }
+//        if (id==R.id.event){
+//
+//
+//            Intent iiiii=new Intent(getActivity(), Eventok.class);
+//            startActivity(iiiii);
+//
+//
+//        }
 
 
         return super.onOptionsItemSelected(item);

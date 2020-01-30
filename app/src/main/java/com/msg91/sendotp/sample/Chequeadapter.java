@@ -33,9 +33,10 @@ public class Chequeadapter extends RecyclerView.Adapter<Chequeadapter.ProductVie
 
         //loading the image
 holder.blog.setText(cheque.getImage());
-        holder.datem.setText(cheque.getUser());
+holder.datem.setText(cheque.getUser());
 holder.date.setText(cheque.getPrize());
 holder.txtt.setText(cheque.getStatus());
+holder.dis.setText(cheque.getDes());
       //  SharedPreferences sharedPreferences = mCtx.getSharedPreferences(Config.SHARED_PREF_NAME, Context.MODE_PRIVATE);
 
         //Creating editor to store values to shared preferences
@@ -52,7 +53,7 @@ holder.txtt.setText(cheque.getStatus());
 
 
 
-        TextView text,txtt,datem,date,blog;
+        TextView text,txtt,datem,date,blog,dis;
 
         public ProductViewHolder(View itemView) {
             super(itemView);
@@ -64,6 +65,7 @@ holder.txtt.setText(cheque.getStatus());
             date=itemView.findViewById(R.id.t_name1);
             datem=itemView.findViewById(R.id.pph1);
             blog=itemView.findViewById(R.id.t_discription1);
+            dis=itemView.findViewById(R.id.dis111);
 
         }
 

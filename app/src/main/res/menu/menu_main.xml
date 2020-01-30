@@ -23,10 +23,10 @@
 
         android:id="@+id/onlinesupport"
         android:title="Online Support" />
-    <item
+<!--    <item-->
 
-        android:id="@+id/event"
-        android:title="Events" />
+<!--        android:id="@+id/event"-->
+<!--        android:title="Events" />-->
     <item
 
         android:id="@+id/logout2"
